@@ -28,7 +28,7 @@ int main()
     printf("Enter the '%d' element ->", i + 1);
     scanf("%d", &arr[i]);
   }
-  printf("\nArray Element");
+  printf("Array Elements\n");
   for (int i = 0; i <= n - 1; i++)
   {
     printf("%d is the '%d' element\n", arr[i], i + 1);
