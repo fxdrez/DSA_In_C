@@ -1,4 +1,4 @@
-// linked list implementation
+// linked list implementation singly linked list
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -9,7 +9,7 @@ int main()
     struct node *next;
   };
   struct node *head = 0, *newnode, *temp;
-  int choice;
+  int choice, count = 0;
   while (choice != 0)
   {
     newnode = (struct node *)malloc(sizeof(struct node));
@@ -33,7 +33,9 @@ int main()
   {
     printf("\n%d", temp->data);
     temp = temp->next;
+    count++;
   }
+  printf("\n%d nodes are present", count);
   free(newnode);
   return 0;
 }
