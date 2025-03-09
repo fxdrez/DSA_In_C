@@ -34,5 +34,6 @@ int main()
     printf("\n%d", temp->data);
     temp = temp->next;
   }
+  free(newnode);
   return 0;
 }
